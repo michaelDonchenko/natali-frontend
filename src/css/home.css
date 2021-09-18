@@ -1,0 +1,41 @@
+/* home page styles */
+
+.categories {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-home-link {
+  border: 3px solid var(--primary-color-1);
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0.5rem;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.category-home-text {
+  font-size: 1.05rem;
+}
+
+.category-home-link:hover {
+  background-color: var(--primary-color-1);
+  border: 3px solid var(--primary-color-2);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .category-home-link {
+    height: 80px;
+    width: 80px;
+  }
+  .category-home-text {
+    font-size: 0.8rem;
+  }
+}

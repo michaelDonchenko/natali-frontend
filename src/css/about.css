@@ -1,0 +1,51 @@
+/* contact page css */
+:root {
+  /* shades of primary color */
+  --primary-color-1: hsl(0, 37%, 76%);
+  --primary-color-2: hsl(0, 37%, 60%);
+  --primary-color-3: hsl(0, 37%, 40%);
+
+  /* shades of light primary color */
+  --primary-color-4: hsl(0, 37%, 95%);
+
+  /* shades of gray color */
+  --gray-color-1: hsl(0, 0%, 85%);
+  --gray-color-2: hsl(0, 0%, 70%);
+  --gray-color-3: hsl(0, 0%, 40%);
+
+  --ff-primary: "Rubik", sans-serif;
+  --background-color: #f9f7f7;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 700px;
+}
+
+.main-section {
+  min-height: 500px;
+  background-color: var(--primary-color-4);
+}
+
+.about-info {
+  background-color: var(--background-color);
+  width: 900px;
+  max-width: 95%;
+  box-shadow: var(--dark-shadow);
+  min-width: 200px;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+@media screen and (max-width: 650px) {
+  .about-grid {
+    grid-template-columns: 100%;
+  }
+}

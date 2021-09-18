@@ -1,0 +1,22 @@
+/* recipes page styles */
+
+.category-image {
+  width: 160px;
+  margin: 0.5rem;
+  transition: var(--transition);
+  border-radius: 50%;
+  border: 5px solid var(--primary-color-1);
+  opacity: 1;
+}
+
+.category-image:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.flex-wrap-container {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

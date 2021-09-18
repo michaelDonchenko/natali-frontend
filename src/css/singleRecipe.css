@@ -1,0 +1,45 @@
+/* Single recipe page styles */
+
+:root {
+  /* shades of primary color */
+  --primary-color-1: hsl(0, 37%, 76%);
+  --primary-color-2: hsl(0, 37%, 60%);
+  --primary-color-3: hsl(0, 37%, 40%);
+
+  /* shades of light primary color */
+  --primary-color-4: hsl(0, 37%, 90%);
+  --primary-color-5: hsl(0, 37%, 95%);
+
+  /* shades of gray color */
+  --gray-color-1: hsl(0, 0%, 85%);
+  --gray-color-2: hsl(0, 0%, 70%);
+  --gray-color-3: hsl(0, 0%, 40%);
+
+  --ff-primary: "Rubik", sans-serif;
+  --background-color: #f9f7f7;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 700px;
+}
+
+.recipe-grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 650px) {
+  .recipe-grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+.recipe-main-image {
+  margin-bottom: 2rem;
+  box-shadow: var(--dark-shadow);
+}
