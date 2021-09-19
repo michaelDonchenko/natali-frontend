@@ -16,16 +16,20 @@ const RecipesTemplate = ({ pageContext, data }) => {
     <Layout>
       <section className="section section-center">
         <div className="flex-wrap-container">
-          {categories.nodes?.map(category => (
-            <Link key={category.strapiId} to={`/category/${category.strapiId}`}>
-              <GatsbyImage
-                image={getImage(category.image?.localFile)}
-                alt={category.title}
-                className="category-image"
-              />
-              <h4>{category.title}</h4>
-            </Link>
-          ))}
+          {categories.nodes.length > 0 &&
+            categories.nodes?.map(category => (
+              <Link
+                key={category.strapiId}
+                to={`/category/${category.strapiId}`}
+              >
+                <GatsbyImage
+                  image={getImage(category.image?.localFile)}
+                  alt={category.title}
+                  className="category-image"
+                />
+                <h4>{category.title}</h4>
+              </Link>
+            ))}
         </div>
         <hr></hr>
 

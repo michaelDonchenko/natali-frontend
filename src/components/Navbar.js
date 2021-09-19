@@ -4,7 +4,7 @@ import links from "../utils/links"
 import { useStaticQuery, graphql } from "gatsby"
 import { RiMenu3Fill } from "react-icons/ri"
 
-const Navbar = () => {
+const Navbar = ({ toggleOpen }) => {
   const activeStyle = {
     color: "hsl(0, 37%, 76%)",
   }
@@ -23,7 +23,11 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-center">
-        <button type="button" className="toggle-btn">
+        <button
+          onClick={() => toggleOpen()}
+          type="button"
+          className="toggle-btn"
+        >
           <RiMenu3Fill />
         </button>
         <div className="nav-links">

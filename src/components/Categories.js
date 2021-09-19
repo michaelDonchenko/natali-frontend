@@ -15,16 +15,17 @@ const Categories = () => {
 
   return (
     <div className="categories">
-      {allStrapiCategory.nodes.map(node => (
-        <div key={node.strapiId}>
-          <Link
-            to={`/category/${node.strapiId}`}
-            className="category-home-link"
-          >
-            <h4 className="category-home-text">{node.title}</h4>
-          </Link>
-        </div>
-      ))}
+      {allStrapiCategory.nodes.length > 0 &&
+        allStrapiCategory.nodes.map(node => (
+          <div key={node.strapiId}>
+            <Link
+              to={`/category/${node.strapiId}`}
+              className="category-home-link"
+            >
+              <h4 className="category-home-text">{node.title}</h4>
+            </Link>
+          </div>
+        ))}
     </div>
   )
 }

@@ -36,9 +36,10 @@ export default function Home() {
 
         <h2>מתכונים מובחרים</h2>
         <div className="flex-center flex-column">
-          {recipes.nodes?.map(recipe => (
-            <RecipePreview key={recipe.strapiId} recipe={recipe} />
-          ))}
+          {recipes.nodes.length > 0 &&
+            recipes.nodes?.map(recipe => (
+              <RecipePreview key={recipe.strapiId} recipe={recipe} />
+            ))}
         </div>
 
         <div className="flex-center">
