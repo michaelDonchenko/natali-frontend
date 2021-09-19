@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import RecipePreview from "../components/RecipePreview"
+import Seo from "../components/Seo"
 
 const Category = ({ pageContext, data }) => {
   const { title } = pageContext
@@ -12,6 +13,7 @@ const Category = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <Seo title={title} />
       <section className="section section-center">
         <h2>{title}</h2>
 

@@ -4,12 +4,14 @@ import "../css/singleRecipe.css"
 import { graphql, navigate } from "gatsby"
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import RecipeIcons from "../components/RecipeIcons"
+import Seo from "../components/Seo"
 
 const recipeTemplate = ({ pageContext, data }) => {
   const { strapiRecipe: recipe } = data
 
   return (
     <Layout>
+      <Seo title={pageContext.title} />
       <section className="section section-center">
         <h2>{pageContext.title}</h2>
 

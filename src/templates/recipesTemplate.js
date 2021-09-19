@@ -5,6 +5,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import "../css/recipes.css"
 import Pager from "../components/Pager"
 import RecipePreview from "../components/RecipePreview"
+import Seo from "../components/Seo"
 
 const RecipesTemplate = ({ pageContext, data }) => {
   const {
@@ -14,6 +15,7 @@ const RecipesTemplate = ({ pageContext, data }) => {
 
   return (
     <Layout>
+      <Seo title="מתכונים" />
       <section className="section section-center">
         <div className="flex-wrap-container">
           {categories.nodes.length > 0 &&
