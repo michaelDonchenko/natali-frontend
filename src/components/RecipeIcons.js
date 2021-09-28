@@ -14,10 +14,10 @@ const RecipeIcons = ({ coockTime, servings }) => {
 
       <div className="flex-column">
         <span className="icon-title">
-          <BsPeople style={{ marginLeft: "0.3rem" }} /> סועדים
+          <BsPeople style={{ marginLeft: "0.3rem" }} /> מנות הגשה
         </span>
 
-        <span className="icon-info">{servings} אנשים</span>
+        <span className="icon-info">{servings} מנות</span>
       </div>
     </div>
   )

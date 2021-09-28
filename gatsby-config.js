@@ -5,8 +5,9 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Nati Chef",
-    description: "בלה בלה בלה",
+    title: "Nati chef",
+    description:
+      "ברוכים הבאים לאתר שכולו מתכונים. תוכלו למצוא כאן מתכוני בצקים, מתכונים דלי קלוריות תבשילים מהממים ועוד",
     author: "Natali Haleli",
     titleTemplate: "%s | Nati chef",
     siteUrl: "https://www.example.com",
@@ -18,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:8082`,
+        apiURL: `https://natali-strapi-backend.herokuapp.com`,
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [`category`, `recipe`],
         singleTypes: [`about-me`, `logo`],

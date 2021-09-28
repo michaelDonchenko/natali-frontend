@@ -34,7 +34,8 @@ export default function Home() {
       <section className="section section-center">
         <Categories />
 
-        <h2>מתכונים מובחרים</h2>
+        <h2>מתכונים מומלצים</h2>
+        <hr></hr>
         <div className="flex-center flex-column">
           {recipes.nodes.length > 0 &&
             recipes.nodes?.map(recipe => (
